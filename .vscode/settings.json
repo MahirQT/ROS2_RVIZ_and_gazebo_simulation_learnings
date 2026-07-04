@@ -1,0 +1,27 @@
+{
+    "ROS2.distro": "jazzy",
+    "python.autoComplete.extraPaths": [
+        "/home/mahir-mulani/ROS2_Workspace/build/turtlesim_catch_them_all_python",
+        "/home/mahir-mulani/ROS2_Workspace/install/turtlesim_catch_them_all_python/lib/python3.12/site-packages",
+        "/home/mahir-mulani/ROS2_Workspace/install/turtles_comm_interface/lib/python3.12/site-packages",
+        "/home/mahir-mulani/ROS2_Workspace/build/my_py_pkg",
+        "/home/mahir-mulani/ROS2_Workspace/install/my_py_pkg/lib/python3.12/site-packages",
+        "/home/mahir-mulani/ROS2_Workspace/install/my_robot_interfaces/lib/python3.12/site-packages",
+        "/home/mahir-mulani/ROS2_Workspace/install/battery_indicator_interfaces/lib/python3.12/site-packages",
+        "/home/mahir-mulani/build/my_py_pkg",
+        "/home/mahir-mulani/install/my_py_pkg/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/mahir-mulani/ROS2_Workspace/build/turtlesim_catch_them_all_python",
+        "/home/mahir-mulani/ROS2_Workspace/install/turtlesim_catch_them_all_python/lib/python3.12/site-packages",
+        "/home/mahir-mulani/ROS2_Workspace/install/turtles_comm_interface/lib/python3.12/site-packages",
+        "/home/mahir-mulani/ROS2_Workspace/build/my_py_pkg",
+        "/home/mahir-mulani/ROS2_Workspace/install/my_py_pkg/lib/python3.12/site-packages",
+        "/home/mahir-mulani/ROS2_Workspace/install/my_robot_interfaces/lib/python3.12/site-packages",
+        "/home/mahir-mulani/ROS2_Workspace/install/battery_indicator_interfaces/lib/python3.12/site-packages",
+        "/home/mahir-mulani/build/my_py_pkg",
+        "/home/mahir-mulani/install/my_py_pkg/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

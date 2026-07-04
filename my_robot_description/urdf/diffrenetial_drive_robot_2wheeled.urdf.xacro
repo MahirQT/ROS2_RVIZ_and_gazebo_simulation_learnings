@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<robot name="Two_Wheel_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="common_properties.urdf.xacro" />
+    <xacro:include filename="mobile_base.xacro" />
+    <xacro:include filename="mobile_base_gazebo.xacro" />
+
+
+
+</robot>
