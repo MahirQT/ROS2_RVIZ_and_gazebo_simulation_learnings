@@ -6,6 +6,12 @@
     <let name="rviz_config"
          value="$(find-pkg-share my_robot_description)/rviz/default_config.rviz"/>
 
+    <let name="ros_gz_bridge_config"
+        value="$(find-pkg-share my_robot_bringup)/config/gazebo_bridge.yaml"/>
+    
+    <let name="gz_world_path"
+         value="$(find-pkg-share my_robot_bringup)/gazebo_worlds/warehouse_world.sdf" />
+
 
     <!-- starting robot_state_publisher Node -->
     <node pkg="robot_state_publisher" exec="robot_state_publisher">
@@ -14,11 +20,17 @@
 
     <!-- gazebo lauch -->
     <include file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py" >
-        <arg name="gz_args" value="empty.sdf -r" />
+        <arg name="gz_args" value="$(var gz_world_path) -r" />
+        <!-- <arg name="gz_args" value="empty.sdf -r" /> -->
     </include>
 
     <!-- spawning created robot -->
      <node pkg="ros_gz_sim" exec="create" args="-topic robot_description"/>
+
+     <!-- establishinng bridge between gazebo and ros2 -->
+      <node pkg="ros_gz_bridge" exec="parameter_bridge">
+        <param name="config_file" value="$(var ros_gz_bridge_config)" />
+      </node>
      
     <!-- Rviz initialize  -->
      <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config)" />
